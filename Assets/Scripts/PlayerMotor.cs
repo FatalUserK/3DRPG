@@ -26,7 +26,7 @@ public class PlayerMotor : MonoBehaviour
     {
         Debug.Log("Following Target: " + newTarget + "");
         agent.stoppingDistance = newTarget.radius * 0.8f;
-        target = newTarget.transform;
+        target = newTarget.interactionTransform;
         agent.updateRotation = true;
     }
 
